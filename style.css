@@ -1,11 +1,13 @@
+/* Master styles */
+
 body {
-    background: blanchedalmond;
+    background:white;
     margin: 0px;
   }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1fr means take up 100% */
 }
 
 /* Nav styles */
@@ -13,6 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 38px;
+    background: blanchedalmond;
 }
 
 .left-side {
@@ -49,5 +52,53 @@ body {
 
 .portfolio-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* Each of the 3 columns = full size */
+}
+
+.portfolio-item-wrapper {
+  position: relative; /* needed so we can nest an absolute image within */
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%; /* adjust automatically */
+  background-size: cover; /* crop images to sit nicely next to each other */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute; /* so logos and images can sit on top of images */
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+/* Needs to be more specific with selector */
+.img-text-wrapper:hover .subtitle { /* hover = JS */
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.img-text-wrapper .subtitle {
+  transition : 1s;
+  color: transparent;
+  font-weight: 600px;
+}
+
+/* This function needs to be called in JavaScript */
+.img-darken {
+  transition: 1s; /* 1 second */
+  filter: brightness(10%);
 }
