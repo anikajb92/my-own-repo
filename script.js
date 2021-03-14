@@ -1,7 +1,7 @@
-const h2 = document.createElement('h2');
+/*const h2 = document.createElement('h2');
 h2.textContent = "This content added by JavaScript, will be footer";
 
-document.querySelector('body').appendChild(h2);
+document.querySelector('body').appendChild(h2);*/
 
 const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
 
