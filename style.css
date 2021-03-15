@@ -15,7 +15,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 38px;
-    background: blanchedalmond;
+    background: thistle;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .left-side {
@@ -35,17 +36,17 @@ body {
 }
 
 .nav-link-wrapper a {
-    color: #8a8a8a;
+    color: black;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .nav-link-wrapper a:hover {
-    color: black;
+    color: white;
 }
 
 /* Portfolio Styles */
@@ -101,17 +102,40 @@ body {
 /* Needs to be more specific with selector */
 .img-text-wrapper:hover .subtitle { /* hover = JS */
   font-weight: 600;
-  color: palevioletred;
+  color: thistle;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .img-text-wrapper .subtitle {
   transition : 1s;
   color: transparent;
   font-weight: 600px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 /* This function needs to be called in JavaScript */
 .img-darken {
   transition: 1s; /* 1 second */
   filter: brightness(10%);
+}
+
+/* Portfolio Page */
+.welcome-section {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.welcome-section h1 {
+  text-align: center;
+}
+
+.portfolio-intro {
+  background-color:thistle;
+  padding: 50px;
+}
+
+.portfolio-outro {
+  background-color:thistle;
+  padding: 50px;
 }
